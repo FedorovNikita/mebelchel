@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'helveticaneuecyrbold';
-    src: url('helveticaneuecyr-bold-webfont.woff2') format('woff2'),
-         url('helveticaneuecyr-bold-webfont.woff') format('woff');
+    src: url('../static/fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+         url('../static/fonts/helveticaneuecyr-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,18 +9,18 @@
 
 @font-face {
     font-family: 'helveticaneuecyrlight';
-    src: url('helveticaneuecyr-light-webfont.woff2') format('woff2'),
-         url('helveticaneuecyr-light-webfont.woff') format('woff');
+    src: url('../static/fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../static/fonts/helveticaneuecyr-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-@mixin font($style: hb) {
-    @if $style == hb {
-        font-family: 'helveticaneuecyrbold';
-    }
-    @if $style == hl {
-        font-family: 'helveticaneuecyrlight';
-    }
+@font-face {
+    font-family: 'helveticaneuecyrmedium';
+    src: url('../static/fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+         url('../static/fonts/helveticaneuecyr-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
