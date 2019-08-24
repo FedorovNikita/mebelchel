@@ -1,0 +1,39 @@
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.products__item {
+    width: 32%;
+}
+
+.products__image {
+    margin-bottom: 30px;
+}
+
+.products__wrap {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products__title {
+    display: block;
+    margin: 0;
+    font-weight: normal;
+}
+
+.products__price {
+    display: block;
+    font-weight: normal;
+    color: $main-color;
+    margin-bottom: 5px;
+}
+
+.products__order {
+    display: block;
+} 
+
