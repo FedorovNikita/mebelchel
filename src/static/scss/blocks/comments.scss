@@ -1,6 +1,12 @@
+.page-main__comments {
+    position: relative;
+    z-index: 1;
+}
+
 .comments {
     padding: 50px 35px 60px;
     background-color: #ffffff;
+    box-shadow: 0 3px 7px rgba(32, 22, 0, 0.06);
 }
 
 .comments__header {
