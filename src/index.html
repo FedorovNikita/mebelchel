@@ -12,7 +12,7 @@
         <div class="container">
             <header class="primary__top-nav top-nav">
                 <h1 class="visually-hidden">Производство индивидуальной мебель на заказ в Челябинске</h1>
-                <a href="#" class="top-nav__logo">
+                <a class="top-nav__logo">
                     <img src="static/img/logo.png" srcset="static/img/logo@2x.png 2x" width="141" height="57" alt="Mebel Chel" class="top-nav__image">
                     <span class="top-nav__desc">Изготовление мебели на заказ в Челябинске</span>
                 </a>
@@ -34,7 +34,7 @@
             </header>
             <p class="primary__slogan">Создавая свое пространство в доме только вы решаете: <span>подстраиваться под мебедь или выбирать мебель под себя</span></p>
             <a href="#" class="primary__order-masters btn">Вызвать замерщика
-                <img class="primary__order-icon" src="static/img/order-masters.png" alt="">
+                <img class="primary__order-icon" width="34" height="30" src="static/img/order-masters.png" alt="Иконка вызвать замерщика">
             </a>
             <p class="primary__order-desc">Закажите выезд замерщика на дом.<br> это бесплатно</p>
         </div>
@@ -101,6 +101,28 @@
                     <li class="goods__item products"></li>
                     <li class="goods__item products"></li>
                 </ul>
+            </section>
+            <section class="design-forms">
+                <h2 class="visually-hidden">Форма для рассчета стоимости</h2>
+                <div class="design-forms__picture">
+                    <picture>
+                        <source type="image/webp" srcset="static/img/design-forms.webp 1x, static/img/design-forms@2x.webp 2x">
+                        <img class="design-forms__image" width="665" height="443" src="static/img/design-forms.jpg" srcset="static/img/design-forms@2x.jpg 2x" alt="Дизайн интерьера">
+                    </picture>
+                </div>
+                <form action="#" method="POST" class="design-forms__form form">
+                    <fieldset> 
+                        <legend class="form__title">Пришлите нам дизайн проекта и мы рассчитаем стоимость</legend>
+                        <label for="form__user-name" class="visually-hidden">Ваше имя</label>
+                        <input type="text" id="form__user-name" name="username" class="form__user-name" placeholder="Имя">
+                        <label for="form__user-phone" class="visually-hidden">Ваш телефон</label>
+                        <input type="text" id="form__user-phone" name="userphone" class="form__user-phone" placeholder="Телефон">
+                        <input type="file" id="form__user-file" name="userfile" class="form__user-file visually-hidden">
+                        <label for="form__user-file" class="form__user-file-label">Выберите файл</label>
+                        <button class="btn form__button" type="submit">Отправить<img class="form__button-icon" width="29" height="29" src="static/img/send-form.png" alt="Иконка отправить дизайн проекта"></button>
+                        <p class="form__policy">*Нажимая кнопку, я даю свое соглашение на <a href="#" class="form__policy-link">обработку персональных данных</a></p>
+                    </fieldset>
+                </form>
             </section>
         </div>
     </main>

@@ -61,10 +61,20 @@ a {
     width: 1200px;
 }
 
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.9s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.9s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.9s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.9s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 1000px; transition: text-indent 0.9s ease;}
+input:focus::-moz-placeholder          {text-indent: 1000px; transition: text-indent 0.9s ease;}
+input:focus:-moz-placeholder           {text-indent: 1000px; transition: text-indent 0.9s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 1000px; transition: text-indent 0.9s ease;}
+
 // styles
 @import 'blocks/button';
 @import 'blocks/primary';
 @import 'blocks/top-nav';
 @import 'blocks/goods';
 @import 'blocks/products';
+@import 'blocks/form';
 

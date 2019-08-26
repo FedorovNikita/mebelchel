@@ -1,0 +1,91 @@
+.design-forms {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.design-forms__picture {
+    width: 50%;
+}
+
+.design-forms__form {
+    width: 50%;
+    padding: 0 80px;
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        border: 0;
+    }
+}
+
+.form__title {
+    margin-left: -100px;
+    font-family: $hm;
+    font-size: 46px;
+    color: $main-color;
+    text-align: center;
+}
+
+.form__user-name,
+.form__user-phone,
+.form__user-file-label {
+    width: 100%;
+    padding: 15px 0;
+    font-family: $hl;
+    font-size: 30px;
+    color: #757575;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #000000;
+}
+
+.form__user-name,
+.form__user-phone {
+    &:focus {
+        outline: none;
+        border-color: $main-color;
+    }
+}
+
+.form__user-file {
+    &:focus + .form__user-file-label {
+        border-color: $main-color;
+    }
+}
+
+.form__user-file-label {
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.form__button {
+    cursor: pointer;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-right: 60px;
+    border: 0;
+}
+
+.form__button-icon {
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form__policy {
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.form__policy-link {
+    color: #000000;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
