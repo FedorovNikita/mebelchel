@@ -7,6 +7,9 @@
     text-transform: uppercase;
     background-color: $main-color;
     transition: all 0.4s;
+    &--img {
+        padding-right: 60px;
+    }
     &:hover {
         background-color: $btn-hover;
     }

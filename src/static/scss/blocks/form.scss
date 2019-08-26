@@ -28,11 +28,13 @@
 
 .form__user-name,
 .form__user-phone,
+.form__user-email,
+.form__user-text,
 .form__user-file-label {
     width: 100%;
     padding: 15px 0;
     font-family: $hl;
-    font-size: 30px;
+    font-size: 20px;
     color: #757575;
     background-color: transparent;
     border: 0;
@@ -40,7 +42,9 @@
 }
 
 .form__user-name,
-.form__user-phone {
+.form__user-phone,
+.form__user-email,
+.form__user-text {
     &:focus {
         outline: none;
         border-color: $main-color;
@@ -64,7 +68,6 @@
     width: 80%;
     margin: auto;
     margin-bottom: 15px;
-    padding-right: 60px;
     border: 0;
 }
 
