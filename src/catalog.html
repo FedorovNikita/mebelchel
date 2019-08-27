@@ -35,77 +35,98 @@
             <h1 class="primart-catalog__title">Каталог</h1>
         </div>
     </section>
-    <div class="container">
-        <main class="page-catalog catalog">
-            <aside class="catalog__sidebar sidebar">
-                <button class="sidebar__toggle"><span class="visually-hidden">Открыть сайдбар</span></button>
-                <h2 class="sidebar__title">Категории</h2>
-                <ul class="sidebar__list">
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">Кухни</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">Шкафы</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">Детская мебель</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">Офисная мебель</a>
-                    </li>
-                </ul>
-            </aside>
-            <section class="catalog__products products">
-                <h2 class="visually-hidden">Наша продукция</h2>
-                <ul class="products__list-filter">
-                    <li class="products__item-filter">
-                        <button class="products__filter-btn"><span class="visually-hidden">Показать сеткой</span></button>
-                    </li>
-                    <li class="products__item-filter">
-                        <button class="products__filter-btn"><span class="visually-hidden">Показать списком</span></button>
-                    </li>
-                </ul>
-                <ul class="products__list">
-                    <li class="products__item">
-                        <picture>
-                            <source type="image/webp" srcset="static/img/table.webp 1x, static/img/table@2x.webp 2x">
-                            <img class="products__image" width="420" height="237" src="static/img/table.jpg" srcset="static/img/table@2x.jpg 2x" alt="Рабочий кабинет">
-                        </picture>
-                        <div class="products__wrap">
-                            <h3 class="products__title"><a href="#" class="products__link">Стол</a></h3>
-                            <b class="products__price">От 15 000</b>
-                            <a href="#" class="products__order btn">Заказать</a>
-                            <a href="#" class="products__more-info">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <picture>
-                            <source type="image/webp" srcset="static/img/staircase.webp 1x, static/img/staircase@2x.webp 2x">
-                            <img class="products__image" width="420" height="237" src="static/img/staircase.jpg" srcset="static/img/staircase@2x.jpg 2x" alt="Лестница">
-                        </picture>
-                        <div class="products__wrap">
-                            <h3 class="products__title"><a href="#" class="products__link">Лестница</a></h3>
-                            <b class="products__price">От 39 000</b>
-                            <a href="" class="products__order btn">Заказать</a>
-                            <a href="#" class="products__more-info">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <picture>
-                            <source type="image/webp" srcset="static/img/kitchen.webp 1x, static/img/kitchen@2x.webp 2x">
-                            <img class="products__image" width="420" height="237" src="static/img/kitchen.jpg" srcset="static/img/kitchen@2x.jpg 2x" alt="Кухня">
-                        </picture>
-                        <div class="products__wrap">
-                            <h3 class="products__title"><a href="#" class="products__link">Кухня</a></h3>
-                            <b class="products__price">От 79 000</b>
-                            <a href="" class="products__order btn">Заказать</a>
-                            <a href="#" class="products__more-info">Подробнее</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </div>
+    <main class="page-catalog catalog">
+        <div class="container">
+            <div class="catalog__filter filter">
+                <div class="filter__sidebar">
+                    <input type="checkbox" id="filter__toggle" class="filter__toggle" checked>
+                    <label for="filter__toggle" class="filter__toggle-label">
+                        <span class="visually-hidden">Открыть/закрыть сайдбар</span>
+                    </label>
+                </div>
+                <div class="filter__products">
+                    <ul class="filter__list-products">
+                        <li class="filter__item-products">
+                            <button class="filter__products-btn">
+                                <svg class="filter__products-icon" width="20" height="20">
+                                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu-square"></use>
+                                </svg>
+                                <span class="visually-hidden">Показать сеткой</span>
+                            </button>
+                        </li>
+                        <li class="filter__item-products">
+                            <button class="filter__products-btn">
+                                <svg class="filter__products-icon" width="20" height="20">
+                                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu-list"></use>
+                                </svg>
+                                <span class="visually-hidden">Показать списком</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog__products-wrapper">
+                <aside class="catalog__sidebar sidebar">
+                    <h2 class="sidebar__title">Категории</h2>
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Кухни</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Шкафы</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Детская мебель</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Офисная мебель</a>
+                        </li>
+                    </ul>
+                </aside>
+                <section class="catalog__products products">
+                    <h2 class="visually-hidden">Наша продукция</h2>
+                    <ul class="products__list">
+                        <li class="products__item">
+                            <picture>
+                                <source type="image/webp" srcset="static/img/table.webp 1x, static/img/table@2x.webp 2x">
+                                <img class="products__image" width="420" height="237" src="static/img/table.jpg" srcset="static/img/table@2x.jpg 2x" alt="Рабочий кабинет">
+                            </picture>
+                            <div class="products__wrap">
+                                <h3 class="products__title"><a href="#" class="products__link">Стол</a></h3>
+                                <b class="products__price">От 15 000</b>
+                                <a href="#" class="products__order btn">Заказать</a>
+                                <a href="#" class="products__more-info">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <picture>
+                                <source type="image/webp" srcset="static/img/staircase.webp 1x, static/img/staircase@2x.webp 2x">
+                                <img class="products__image" width="420" height="237" src="static/img/staircase.jpg" srcset="static/img/staircase@2x.jpg 2x" alt="Лестница">
+                            </picture>
+                            <div class="products__wrap">
+                                <h3 class="products__title"><a href="#" class="products__link">Лестница</a></h3>
+                                <b class="products__price">От 39 000</b>
+                                <a href="" class="products__order btn">Заказать</a>
+                                <a href="#" class="products__more-info">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <picture>
+                                <source type="image/webp" srcset="static/img/kitchen.webp 1x, static/img/kitchen@2x.webp 2x">
+                                <img class="products__image" width="420" height="237" src="static/img/kitchen.jpg" srcset="static/img/kitchen@2x.jpg 2x" alt="Кухня">
+                            </picture>
+                            <div class="products__wrap">
+                                <h3 class="products__title"><a href="#" class="products__link">Кухня</a></h3>
+                                <b class="products__price">От 79 000</b>
+                                <a href="" class="products__order btn">Заказать</a>
+                                <a href="#" class="products__more-info">Подробнее</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
     <footer class="main-footer footer">
         <div class="container">
             <div class="footer__wrapper">

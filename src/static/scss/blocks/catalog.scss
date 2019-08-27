@@ -9,13 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     font-family: $hb;
     font-size: 32px;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.catalog {
+.page-catalog {
+    background-color: #ffffff;
+}
+
+.catalog__products-wrapper {
     display: flex;
-    justify-content: space-between;
 }

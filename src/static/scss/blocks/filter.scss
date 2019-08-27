@@ -1,0 +1,73 @@
+.filter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.filter__sidebar {
+    width: 240px;
+    padding: 20px 30px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+
+.filter__toggle {
+    display: none;
+}
+
+.filter__toggle:checked ~ .filter__toggle-label {
+    background-color: $main-color;
+    &::before {
+        left: auto;
+        right: 0;
+        background-color: #f3f3f3;
+    }
+}
+
+.filter__toggle-label {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #bbbbbb;
+    border-radius: 10px;
+    transition: all 0.4s;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background-color: $main-color;
+        border-radius: 50%;
+        transform: translateY(50%);
+    }
+}
+
+.filter__products {
+    padding: 20px 30px 20px 0;
+}
+
+.filter__list-products {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filter__products-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    fill: #bbbbbb;
+    transition: all 0.4s;
+    &:hover,
+    &:focus,
+    &:active {
+        fill: $main-color;
+    }
+}
