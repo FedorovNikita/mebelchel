@@ -5,10 +5,19 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    &--catalog {
+        display: block;
+        text-align: center;
+    }
 }
 
 .products__item {
     width: 32%;
+    &--catalog {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+    }
 }
 
 .products__image {
@@ -26,6 +35,17 @@
     font-weight: normal;
 }
 
+.products__link {
+    color: #000000;
+    font-family: $hm;
+    transition: all 0.4s;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $main-color;
+    }
+}
+
 .products__price {
     display: block;
     font-weight: normal;
@@ -35,5 +55,19 @@
 
 .products__order {
     display: block;
-} 
+}
+
+.products__more-info {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: underline;
+    color: #000000;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
 

@@ -2,17 +2,29 @@
     display: flex;
     align-items: center;
     width: 100%;
+    border: 1px solid #ececec;
 }
 
 .filter__sidebar {
-    width: 240px;
+    width: 239px;
     padding: 20px 30px;
-    border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
 }
 
 .filter__toggle {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    &:focus ~ .filter__toggle-label{
+        border: 2px solid #4D90FE;
+    }
 }
 
 .filter__toggle:checked ~ .filter__toggle-label {
@@ -48,7 +60,7 @@
 }
 
 .filter__products {
-    padding: 20px 30px 20px 0;
+    padding: 20px 30px;
 }
 
 .filter__list-products {
