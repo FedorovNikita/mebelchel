@@ -16,6 +16,11 @@ module.exports = function() {
             .pipe($.gulp.dest('build/static/img'));
     });
 
+    $.gulp.task('ico', function () {
+        return $.gulp.src('src/static/img/*.ico')
+            .pipe($.gulp.dest('build/static/img'));
+    });
+
     $.gulp.task('webp', function () {
         return $.gulp.src('src/static/img/*.{png,jpg}')
         .pipe($.webp({quality: 90}))
